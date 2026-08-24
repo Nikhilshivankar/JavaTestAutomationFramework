@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AutomationTestSuite" verbose="1">
+    <listeners>
+        <listener class-name="listeners.ITestListener_Implimentation" />
+        <listener class-name="listeners.ListenerClass" />
+    </listeners>
+    
+    <test name="API_and_UI_AutomationTests">
+        <classes>
+            <class name="api_TESTING.API_Test" />
+            <class name="ui_TESTING.UI_Test" />
+            <class name="test.TestNG.Test_ExtentReport" />
+            <class name="test.TestNG.Test_Pack_02" />
+        </classes>
+    </test>
+</suite>
